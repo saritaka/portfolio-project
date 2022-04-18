@@ -13,10 +13,6 @@ body {
   margin-bottom: 40px;
 }
 
-nav {
-  background-color: var(--branding-color);
-}
-
 .hero {
   background-color: var(--branding-color);
   text-align: center;
