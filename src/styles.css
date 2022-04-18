@@ -57,6 +57,7 @@ h1 {
   font-size: 18px;
   padding: 15px 30px;
 }
+
 .project-details {
   padding: 60px 60px;
 }
@@ -65,24 +66,34 @@ p {
   font-size: 16px;
 }
 
-.about-section {
+.container-content {
   padding: 160px 30px;
 }
 
-.about-section h1 {
+.container-content h1 {
   font-size: 64px;
 }
 
-.about-section h2 {
+.container-content h2 {
   font-size: 18px;
   font-family: var(--default-family);
 }
 
-.about-section img {
-  max-width: 70%;
+.container-content img {
+  /* max-width: 70%; */
   display: block;
   margin: 0 auto;
   border-radius: 50%;
+}
+
+.container-content p {
+  text-align: center;
+  font-size: 14px;
+}
+.container-content h3 {
+  font-family: var(--default-family);
+  font-size: 24px;
+  text-align: center;
 }
 
 @media (max-width: 750px) {
@@ -95,7 +106,7 @@ p {
     text-align: center;
   }
 
-  .about-section {
+  .container-content {
     padding: 30px 30px;
     text-align: center;
   }
