@@ -158,9 +158,9 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .hero {
-    padding: 30px 30px;
+    padding: 40px 30px;
   }
 
   .project-details {
@@ -172,12 +172,20 @@ footer .social-links a:hover {
     padding: 30px 30px;
     text-align: center;
   }
+  .container-content h1 {
+    font-size: 33px;
+  }
+  .container-content h3,
+  h4 {
+    font-size: 25px;
+  }
 
   h1 {
     font-size: 44px;
   }
-  h2 {
-    /* font-size: 40px; */
+
+  h2,
+  .container-content h2 {
     font-size: 30px;
   }
 }
