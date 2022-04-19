@@ -26,12 +26,12 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Document</title>
+    <title>Front-end developer - Sarit Akale</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Sarit Akale</a>
+        <a class="navbar-brand" href="/" title="Homepage">Sarit Akale</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,10 +48,18 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link" href="/work.html">Work</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/"
+              title="Homepage"
+              >Home</a
+            >
+            <a class="nav-link" href="/about.html" title="About Sarit">About</a>
+            <a class="nav-link" href="/work.html" title="Sarit's work">Work</a>
+            <a class="nav-link" href="/contact.html" title="Contact Sarit"
+              >Contact</a
+            >
           </div>
         </div>
       </div>
@@ -60,26 +68,38 @@
       <p>Hi, I am</p>
       <h1>Sarit Akale</h1>
       <h2 class="mb-5">Front-end developer based in Israel</h2>
-      <a href="#" class="btn btn-contact border">Contact me</a>
+      <a
+        href="/contact.html"
+        class="btn btn-contact border shadow"
+        title="Contact me"
+        >Contact me</a
+      >
     </div>
-    <p class="text-center m-5">
-      Featured Project which my best projects be choice to show
-    </p>
+    <p class="text-center m-5">Check out some of my featured projects below</p>
     <div class="container">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img class="img-fluid" src="images/yoga.png" alt="Yoga Project" />
+          <img
+            class="img-fluid"
+            src="/images/yogurt.png"
+            alt="Blueberries Landing Page Project"
+          />
         </div>
         <div class="col">
           <div class="project-details">
-            <h2 class="mb-3">Yoga project</h2>
+            <h2 class="mb-3">Blueberries Page project</h2>
             <p class="text-muted mb-5">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
+              I entered the world of front-end development by gaining some
+              knowledge in HTML, CSS, and JavaScript. I used my knowledge of
+              these languages, along with my new skills in VS Code, to build a
+              landing page about Blueberries. The page utilizes JavaScript
+              functions to create user interaction. <br />Check the page to
+              learn more about blueberries and get the perfect blueberries
+              muffin recipe.
             </p>
-            <a href="#" class="btn btn-project border">Learn more</a>
+            <a href="/work.html" class="btn btn-project shadow border"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>
@@ -88,18 +108,24 @@
           <div class="project-details">
             <h2 class="mb-3">Weather Project</h2>
             <p class="text-muted mb-5">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
+              This application was built during the SheCodes Plus Workshop using
+              Vanilla JavaScript. In the workshop I also became skilled in
+              Bootstrap, API, real-life development workflow, hosting, and
+              advanced JavaScript. I combined all of these skills to create a
+              fully-functioning weather app. <br />Use this application to check
+              the weather in your current location or in any other city around
+              the world. The app also displays the forecast for the following
+              days in the selected location.
             </p>
-            <a href="#" class="btn btn-project border">Learn more</a>
+            <a href="/work.html" class="btn btn-project border shadow"
+              >Learn more</a
+            >
           </div>
         </div>
         <div class="col d-none d-lg-block">
           <img
             class="img-fluid"
-            src="images/weather.png"
+            src="/images/weather.png"
             alt="Weather Project"
           />
         </div>
@@ -108,7 +134,7 @@
         <div class="col d-none d-lg-block">
           <img
             class="img-fluid"
-            src="images/dictionary.png"
+            src="/images/dictionary.png"
             alt="dictionary project"
           />
         </div>
@@ -116,17 +142,19 @@
           <div class="project-details">
             <h2 class="mb-3">Dictionary Project</h2>
             <p class="text-muted mb-5">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by
+              I immersed myself in React development in SheCodes React. I used
+              my knowledge of this highly-demanded framework to build a working
+              dictionary app incorporating coding best practices, along with the
+              most popular tools and technologies.
             </p>
-            <a href="#" class="btn btn-project border">Learn more</a>
+            <a href="/work.html" class="btn btn-project border shadow"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>
       <footer>
-        <div
+        <!-- <div
           class="contact-box d-flex justify-content-between d-none d-md-flex"
         >
           <div>
@@ -138,18 +166,41 @@
               >Contact Me</a
             >
           </div>
-        </div>
+        </div> -->
         <div class="d-flex justify-content-center mb-5">
           <a href="mailto:akalesarit@gmail.com" class="email-link"
             >akalesarit@gmail.com</a
           >
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a
+            href="https://www.instagram.com/saritakale/"
+            target="_blank"
+            title="Instagram Profile"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sarit-akale-b3a141180/"
+            target="_blank"
+            title="LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/saritaka"
+            target="_blank"
+            title="GitHub Profile"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
       </footer>
+      <p class="text-center">
+        This website was coded by Sarit Akale, and is
+        <a
+          href="https://github.com/saritaka/portfolio-project"
+          class="text-decoration-none"
+          >open-sourced</a
+        >
+      </p>
     </div>
   </body>
 </html>

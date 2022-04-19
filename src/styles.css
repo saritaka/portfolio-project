@@ -3,7 +3,7 @@ font-family: 'Poppins', sans-serif; */
 
 :root {
   --branding-color: #f0ece2;
-  --secondary-color: white;
+  --secondary-color: #a3a297;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -50,7 +50,7 @@ p {
 }
 
 .btn-contact {
-  background-color: var(--secondary-color);
+  background-color: white;
   opacity: 90%;
   color: rgba(0, 0, 0, 0.7);
   font-size: 18px;
@@ -61,17 +61,22 @@ p {
 
 .btn-project {
   background-color: var(--branding-color);
-  color: rgba(0, 0, 0, 0.7);
+  /* background-color: white; */
+  /* color: rgba(0, 0, 0, 0.7); */
+  color: var(--secondary-color);
   font-size: 18px;
   padding: 15px 30px;
+  border: var(--border);
 }
-
+.btn-project:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
 .project-details {
   padding: 60px 60px;
 }
 
 .container-content {
-  padding: 160px 30px;
+  padding: 150px 30px 0px;
 }
 
 .container-content h1 {
@@ -83,15 +88,15 @@ p {
   font-family: var(--default-family);
 }
 
-.container-content img {
-  /* max-width: 70%; */
+.self-img {
+  max-width: 70%;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
 }
 
 .container-content p {
-  text-align: center;
+  /* text-align: center; */
   font-size: 14px;
 }
 .container-content h3 {
@@ -111,14 +116,30 @@ footer .contact-box {
   border-radius: 10px;
   padding: 20px 30px;
 }
-footer .email-link {
+.email-link,
+.contact-links {
   color: black;
   text-decoration: none;
+  /* font-size: 24px; */
+}
+
+.email-links {
   font-size: 24px;
 }
 
-footer .email-link:hover {
-  color: var(--branding-color);
+.email-link:hover,
+.contact-links:hover {
+  color: var(--secondary-color);
+}
+.author {
+  margin-top: 80px;
+}
+.author a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.author a:hover {
+  text-decoration: underline;
 }
 
 footer .social-links a {
@@ -133,8 +154,8 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: white;
-  background: green;
+  color: rgba(0, 0, 0, 0.7);
+  background: var(--branding-color);
 }
 
 @media (max-width: 750px) {

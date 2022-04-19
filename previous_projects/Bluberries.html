@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blueberries</title>
+    <style>
+      div {
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
+        width: 60%;
+        margin: 0 auto;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+        padding: 15px;
+      }
+      h1 {
+        color: #c4c1e0;
+        border: 1px solid #c4c1e0;
+        border-radius: 5px;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      .description {
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: medium;
+        background-color: #455a64;
+        color: white;
+        padding: 5px;
+        transition: all 200ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      button:hover {
+        color: #455a64;
+        background-color: white;
+        opacity: 0.7;
+        border-radius: 10px;
+        box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
+      }
+      span {
+        display: block;
+        text-align: center;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>I Love Blueberries</h1>
+      <h2>Blueberries Muffins Are My Favourite</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/647/original/blueberries.jpg?1646560479"
+        alt="Blueberries"
+        width="300"
+      />
+      <p class="description">
+        <strong>Blueberries</strong> are a widely distributed and widespread
+        group of perennial flowering plants with blue or purple berries. They
+        are classified in the section <em> Cyanococcus </em> within the genus
+        <em>Vaccinium</em>.<em>Vaccinium</em> also includes cranberries,
+        bilberries, huckleberries and Madeira blueberries. Commercial
+        blueberries—both wild (lowbush) and cultivated (highbush)—are all native
+        to North America. The highbush varieties were introduced into Europe
+        during the 1930s.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Blueberry" target="_blank">
+          Learn more in Wikipedia
+        </a>
+      </p>
+      <button>👉Blueberries Muffins Recipe</button>
+      <br />
+      <span>This page was built by Sarit Akale</span>
+    </div>
+    <script>
+      function sendRecipe() {
+        let email = prompt(
+          "Recipe will be send to your email. Enter your Email:"
+        );
+        if (email.length > 0) {
+          alert("Recipe sent to " + email + ". Enjoy your muffins!😀");
+        } else {
+          alert("Invalid email");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", sendRecipe);
+    </script>
+  </body>
+</html>
